@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery-list</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    
+            
+</head>
+<body background="./images/online_shopping_addiction-scaled.jpeg">
+    <center>
+        <h1>Grocery List</h1>
+        <div class="row">
+            <div class="col s12">
+            <table class="highlight" id="myTable">
+                <thead>
+                    <tr>
+                        <td>Item Name</td>
+                        <td>Item Price</td>
+                        <td>Item Quantity</td>
+                        <td>Notes</td>
+                        <td>Checked</td>
+                         
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Carrot</td>
+                        <td>10</td>
+                        <td>2</td>
+                        <td>Fresh</td>
+                        <td>  <div class="switch">
+                            <label>
+                              <input type="checkbox" name="checkbox">
+                              <span class="lever"></span>
+                            </label>
+                          </div></td>
+                          <td><button class="btn-flat" style="color: aliceblue;" onclick="deletefn(this);"><i class="material-icons">delete</i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Flour</td>
+                        <td>120</td>
+                        <td>1</td>
+                        <td>1 Bag</td>
+                        <td>  <div class="switch">
+                            <label>
+                              <input type="checkbox" name="checkbox">
+                              <span class="lever"></span>
+                            </label>
+                          </div></td>
+                          <td><button class="btn-flat" style="color: aliceblue;" onclick="deletefn(this);"><i class="material-icons">delete</i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Eggs</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>Regular</td>
+                        <td>  <div class="switch">
+                            <label>
+                              <input type="checkbox" name="checkbox">
+                              <span class="lever"></span>
+                            </label>
+                          </div></td>
+                          <td><button class="btn-flat" style="color: aliceblue;" onclick="deletefn(this);"><i class="material-icons">delete</i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Beans</td>
+                        <td>10</td>
+                        <td>2</td>
+                        <td>Fresh</td>
+                        <td>  <div class="switch">
+                            <label>
+                              <input type="checkbox" name="checkbox">
+                              <span class="lever"></span>
+                            </label>
+                          </div></td>
+                          <td><button class="btn-flat" style="color: aliceblue;" onclick="deletefn(this);"><i class="material-icons">delete</i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Banana</td>
+                        <td>10</td>
+                        <td>2</td>
+                        <td>Green</td>
+                        <td>  <div class="switch">
+                            <label>
+                              <input type="checkbox" name="checkbox">
+                              <span class="lever"></span>
+                            </label>
+                          </div></td>
+                          <td><button class="btn-flat" style="color: aliceblue;" onclick="deletefn(this);"><i class="material-icons">delete</i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Milk</td>
+                        <td>10</td>
+                        <td>2</td>
+                        <td>Milma Packet</td>
+                        <td>  <div class="switch">
+                            <label>
+                              <input type="checkbox" name="checkbox">
+                              <span class="lever"></span>
+                            </label>
+                          </div></td>
+                          <td><button class="btn-flat" style="color: aliceblue;" onclick="deletefn(this);"><i class="material-icons">delete</i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Horlicks</td>
+                        <td>120</td>
+                        <td>1</td>
+                        <td>Big Jar</td>
+                        <td>  <div class="switch">
+                            <label>
+                              <input type="checkbox" name="checkbox">
+                              <span class="lever"></span>
+                            </label>
+                          </div></td>
+                          <td><button class="btn-flat" style="color: aliceblue;" onclick="deletefn(this);"><i class="material-icons">delete</i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Candles</td>
+                        <td>10</td>
+                        <td>2</td>
+                        <td>Brand</td>
+                        <td>  <div class="switch">
+                            <label>
+                              <input type="checkbox" name="checkbox">
+                              <span class="lever"></span>
+                            </label>
+                          </div></td>
+                          <td><button class="btn-flat" style="color: aliceblue;" onclick="deletefn(this);"><i class="material-icons">delete</i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Chocolates</td>
+                        <td>120</td>
+                        <td>1</td>
+                        <td>Silk</td>
+                        <td><div class="switch">
+                            <label>
+                              <input type="checkbox" name="checkbox">
+                              <span class="lever"></span>
+                            </label>
+                          </div></td>
+                          <td><button class="btn-flat" style="color: aliceblue;" onclick="deletefn(this);"><i class="material-icons">delete</i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Snacks</td>
+                        <td>20</td>
+                        <td>1</td>
+                        <td>Cheetos</td>
+                        <td>  <div class="switch">
+                            <label>
+                              <input type="checkbox" name="checkbox">
+                              <span class="lever"></span>
+                            </label>
+                          </div></td>
+                          <td><button class="btn-flat" style="color: aliceblue;" onclick="deletefn(this);"><i class="material-icons">delete</i></button></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+        <h5>Insert Items into list</h5>
+        <div class="row">
+            <div class="col s12">
+            <div class="col s2" style="color: black;font-weight: bold;font-family: poppins;font-size: 10px;">
+                <input type="text" id="itemname" placeholder="Enter Item name" style="color: rgb(0, 0, 0); background-color: beige;text-align:center;">
+            </div>
+            <div class="col s2">
+                <input type="number" id="itemprice" placeholder="Enter Price"style="color: black;background-color: beige;text-align:center;">
+            </div>
+            <div class="col s2">
+                <input type="number" id="itemquantity" placeholder="Enter Quantity"style="color: black; background-color: beige;text-align:center;">
+            </div>
+            <div class="col s2">
+                <input type="text" id="Notes" placeholder="Notes"style="color: black; background-color: beige;text-align:center;" >
+            </div>
+            <button class="btn waves-effect waves-dark" type="submit" style="background-color: rgb(0, 140, 255);" onclick="additem();">Add Item to list</button>
+
+            </div>
+        </div>
+    </center>
+    <script src="index.js"></script>
+</body>
+</html>
